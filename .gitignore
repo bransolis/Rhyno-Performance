@@ -1,0 +1,41 @@
+# --- Compilación de .NET (se generan solos al correr el proyecto) ---
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+
+# --- Visual Studio (configuración personal de cada quien) ---
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# --- VS Code / Rider ---
+.vscode/
+.idea/
+
+# --- Paquetes NuGet ---
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# --- Publicación ---
+publish/
+*.pubxml
+*.publishproj
+
+# --- Secretos y configuración local (NUNCA subir) ---
+appsettings.Development.json
+*.env
+.env
+
+# --- Sistema operativo ---
+Thumbs.db
+Desktop.ini
+.DS_Store
