@@ -1050,6 +1050,164 @@ p {
     margin-bottom: 18px;
 }
 
+/* Nota debajo del precio (plan menores) */
+.plan-note {
+    font-size: 13px;
+    color: var(--purple-text);
+    margin: -8px 0 14px;
+    font-weight: 500;
+}
+
+/* Horario de clases */
+.classes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.class-card {
+    padding: 22px;
+    border-top: 4px solid var(--border);
+}
+
+    .class-card.accent-orange {
+        border-top-color: var(--rhino-orange);
+    }
+
+    .class-card.accent-cyan {
+        border-top-color: var(--rhino-cyan);
+    }
+
+    .class-card.accent-purple {
+        border-top-color: var(--rhino-purple);
+    }
+
+    .class-card.accent-yellow {
+        border-top-color: var(--rhino-yellow);
+    }
+
+.class-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+    .class-head h3 {
+        font-size: 18px;
+    }
+
+.class-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.class-card li {
+    display: flex;
+    gap: 9px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+    .class-card li .svg-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 3px;
+        color: var(--primary-text);
+    }
+
+/* Entrenadores */
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.trainer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.trainer-photo {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    border-radius: 0;
+    padding: 0;
+    display: block;
+}
+
+    .trainer-photo img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+.trainer-initials {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.trainer-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+}
+
+    .trainer-body h3 {
+        font-size: 20px;
+    }
+
+.trainer-title {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex: 1;
+    align-content: flex-start;
+}
+
+    .chips .badge {
+        font-size: 11.5px;
+        padding: 4px 10px;
+    }
+
+/* Responsive de las secciones nuevas */
+@media (max-width: 960px) {
+    .classes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .classes {
+        grid-template-columns: 1fr;
+    }
+
+    .trainers {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ---------- 6. RESPONSIVE ---------- */
 @media (max-width: 960px) {
     .hero .container, .app-section .container, .contact {

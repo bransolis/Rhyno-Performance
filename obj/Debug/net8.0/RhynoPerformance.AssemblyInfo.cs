@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RhynoPerformance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a9e34d3a1338acdb048dbec76a87888ef240e82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96bff7ee906a86341fb2fa9cdc88e81c6e2769cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("RhynoPerformance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RhynoPerformance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
